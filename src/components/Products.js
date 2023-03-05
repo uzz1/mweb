@@ -167,8 +167,8 @@ return (
 {campaigns.length > 0 && (
 <>
 <p>Select a campaign:</p>
+<Container>
 <FormControl size="lg"  as="select" onChange={handleCampaignChange}>
-<optgroup className='providers'>
 <option value="">-- Select a campaign --</option>
 {campaigns.map(campaign => (
 <option key={campaign.code} value={campaign.code}>
@@ -176,8 +176,9 @@ return (
 </option>
 
 ))}
-</optgroup>
 </FormControl>
+</Container>
+
 <hr />
 </>
 )}
@@ -213,7 +214,6 @@ return (
 
 
 <div>
-   
 
     {selectedProviders.length > 0 ? (
         <>
@@ -274,25 +274,8 @@ return (
   </DropdownMenu>
 </Dropdown>
 </Col>
-{selectedPriceRanges.length > 0 ?
-<Col>
-
-<div>
-          Selected Price Filters:
-          </div>
-<br></br>
-        {priceRanges.map((range, index) => (
-          <div className='selected-div'>
-            <span className={selectedPriceRanges.includes(range.label) ? "selected-filter" : "none"}>
-              {range.label}
-            </span>
-          </div>
-        ))}
-        </Col>
-:null}
-
       </Row>
-    <Row>
+    <Row className="products-row">
       <br></br>
       <br></br>
         {selectedProducts.map((product, index) => (

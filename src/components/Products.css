@@ -31,6 +31,7 @@
   .products-container {
     text-align: center;
     margin-bottom: 50px;
+    width: 100%;
   }
   .card-row {
     display: flex;
@@ -95,8 +96,14 @@
     display: none;
   }
   .load-more {
-    width: 25vw
+    width: 30vw
     
+  }
+  .products-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 30px;
   }
            
 
