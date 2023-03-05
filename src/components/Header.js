@@ -46,10 +46,10 @@ function Header() {
             <Container className="text-center">
               <Row>
                 <Col className="mx-auto" lg="7">
-                  <h1 className="video-text">MWEB Reimagined</h1>
-                  <h1 className="display-3 text-orange">
-                    The time is now
-                  </h1>
+                  <h1 className="text-white"><strong>MWEB Reimagined</strong></h1>
+                  <h4 className="text-orange">
+                    <strong>The time is now</strong>
+                  </h4>
                   
                 </Col>
               </Row>
