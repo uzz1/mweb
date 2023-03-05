@@ -288,7 +288,7 @@ return (
         ))}
       {remainingProducts.length > 0 && (
         <div className='button-div'>
-      <Button className='load-more' onClick={loadMoreProducts}>Load More Products</Button>
+      <Button className='load-more' onClick={loadMoreProducts}>Load More</Button>
 
         </div>
     )}
