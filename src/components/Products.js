@@ -166,7 +166,7 @@ return (
 <Row>
 {campaigns.length > 0 && (
 <>
-<p>Select a campaign:</p>
+<h6>Select a campaign:</h6>
 <Container>
 <FormControl size="lg"  as="select" onChange={handleCampaignChange}>
 <option value="">-- Select a campaign --</option>
